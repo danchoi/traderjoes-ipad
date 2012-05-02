@@ -30,10 +30,10 @@
 
   /* Move RestKit functions into a self contained class, maybe a singleton */
 
-  MasterViewController *master_vc = [[MasterViewController alloc] initWithNibName:@"MasterViewController_iPad" bundle:nil];
+  MasterViewController *master_vc = [[MasterViewController alloc] init];
   UINavigationController *master_nc = [[UINavigationController alloc] initWithRootViewController:master_vc];
   
-  DetailViewController *detail_vc = [[DetailViewController alloc] initWithNibName:@"DetailViewController_iPad" bundle:nil];
+  DetailViewController *detail_vc = [[DetailViewController alloc] init];
   UINavigationController *detail_nc = [[UINavigationController alloc] initWithRootViewController:detail_vc];
 
   master_vc.detailViewController = detail_vc;
