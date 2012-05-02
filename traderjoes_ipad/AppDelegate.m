@@ -30,31 +30,21 @@
 
   /* Move RestKit functions into a self contained class, maybe a singleton */
 
-  if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-      MasterViewController *masterViewController = [[MasterViewController alloc] initWithNibName:@"MasterViewController_iPhone" bundle:nil];
-      self.navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
-      self.window.rootViewController = self.navigationController;
-      masterViewController.managedObjectContext = self.managedObjectContext;
-  } else {
-
-    // iPad
-    // TODO: replace nib with direct instantiation in code
-
-    MasterViewController *master_vc = [[MasterViewController alloc] initWithNibName:@"MasterViewController_iPad" bundle:nil];
-    UINavigationController *master_nc = [[UINavigationController alloc] initWithRootViewController:master_vc];
-    
-    DetailViewController *detail_vc = [[DetailViewController alloc] initWithNibName:@"DetailViewController_iPad" bundle:nil];
-    UINavigationController *detail_nc = [[UINavigationController alloc] initWithRootViewController:detail_vc];
+  MasterViewController *master_vc = [[MasterViewController alloc] initWithNibName:@"MasterViewController_iPad" bundle:nil];
+  UINavigationController *master_nc = [[UINavigationController alloc] initWithRootViewController:master_vc];
   
-    master_vc.detailViewController = detail_vc;
-    
-    self.splitViewController = [[UISplitViewController alloc] init];
-    self.splitViewController.delegate = detail_vc;
-    self.splitViewController.viewControllers = [NSArray arrayWithObjects:master_nc, detail_nc, nil];
-    
-    self.window.rootViewController = self.splitViewController;
-    master_vc.managedObjectContext = self.managedObjectContext;
-  }
+  DetailViewController *detail_vc = [[DetailViewController alloc] initWithNibName:@"DetailViewController_iPad" bundle:nil];
+  UINavigationController *detail_nc = [[UINavigationController alloc] initWithRootViewController:detail_vc];
+
+  master_vc.detailViewController = detail_vc;
+  
+  self.splitViewController = [[UISplitViewController alloc] init];
+  self.splitViewController.delegate = detail_vc;
+  self.splitViewController.viewControllers = [NSArray arrayWithObjects:master_nc, detail_nc, nil];
+  
+  self.window.rootViewController = self.splitViewController;
+  master_vc.managedObjectContext = self.managedObjectContext;
+
   [self.window makeKeyAndVisible];
   return YES;
 }
