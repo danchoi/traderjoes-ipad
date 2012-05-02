@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DEF840FE155184580022D9E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF840FD155184580022D9E4 /* UIKit.framework */; };
+		DEF84100155184580022D9E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF840FF155184580022D9E4 /* Foundation.framework */; };
+		DEF84102155184580022D9E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF84101155184580022D9E4 /* CoreGraphics.framework */; };
+		DEF84104155184580022D9E4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF84103155184580022D9E4 /* CoreData.framework */; };
+		DEF8410A155184580022D9E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DEF84108155184580022D9E4 /* InfoPlist.strings */; };
+		DEF8410C155184580022D9E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF8410B155184580022D9E4 /* main.m */; };
+		DEF84110155184580022D9E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF8410F155184580022D9E4 /* AppDelegate.m */; };
+		DEF84113155184580022D9E4 /* traderjoes_ipad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DEF84111155184580022D9E4 /* traderjoes_ipad.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DEF840F9155184580022D9E4 /* traderjoes_ipad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = traderjoes_ipad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF840FD155184580022D9E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DEF840FF155184580022D9E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DEF84101155184580022D9E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DEF84103155184580022D9E4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DEF84107155184580022D9E4 /* traderjoes_ipad-Info.plist */ = {isa = PBXFileReference; path = "traderjoes_ipad-Info.plist"; sourceTree = "<group>"; };
+		DEF84109155184580022D9E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DEF8410B155184580022D9E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DEF8410D155184580022D9E4 /* traderjoes_ipad-Prefix.pch */ = {isa = PBXFileReference; path = "traderjoes_ipad-Prefix.pch"; sourceTree = "<group>"; };
+		DEF8410E155184580022D9E4 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		DEF8410F155184580022D9E4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DEF84112155184580022D9E4 /* traderjoes_ipad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = traderjoes_ipad.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEF840F6155184580022D9E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF840FE155184580022D9E4 /* UIKit.framework in Frameworks */,
+				DEF84100155184580022D9E4 /* Foundation.framework in Frameworks */,
+				DEF84102155184580022D9E4 /* CoreGraphics.framework in Frameworks */,
+				DEF84104155184580022D9E4 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DEF840EE155184580022D9E4 = {
+			isa = PBXGroup;
+			children = (
+				DEF84105155184580022D9E4 /* traderjoes_ipad */,
+				DEF840FC155184580022D9E4 /* Frameworks */,
+				DEF840FA155184580022D9E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEF840FA155184580022D9E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEF840F9155184580022D9E4 /* traderjoes_ipad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEF840FC155184580022D9E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEF840FD155184580022D9E4 /* UIKit.framework */,
+				DEF840FF155184580022D9E4 /* Foundation.framework */,
+				DEF84101155184580022D9E4 /* CoreGraphics.framework */,
+				DEF84103155184580022D9E4 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEF84105155184580022D9E4 /* traderjoes_ipad */ = {
+			isa = PBXGroup;
+			children = (
+				DEF8410E155184580022D9E4 /* AppDelegate.h */,
+				DEF8410F155184580022D9E4 /* AppDelegate.m */,
+				DEF84111155184580022D9E4 /* traderjoes_ipad.xcdatamodeld */,
+				DEF84106155184580022D9E4 /* Supporting Files */,
+			);
+			path = traderjoes_ipad;
+			sourceTree = "<group>";
+		};
+		DEF84106155184580022D9E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEF84107155184580022D9E4 /* traderjoes_ipad-Info.plist */,
+				DEF84108155184580022D9E4 /* InfoPlist.strings */,
+				DEF8410B155184580022D9E4 /* main.m */,
+				DEF8410D155184580022D9E4 /* traderjoes_ipad-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEF840F8155184580022D9E4 /* traderjoes_ipad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEF84116155184580022D9E4 /* Build configuration list for PBXNativeTarget "traderjoes_ipad" */;
+			buildPhases = (
+				DEF840F5155184580022D9E4 /* Sources */,
+				DEF840F6155184580022D9E4 /* Frameworks */,
+				DEF840F7155184580022D9E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = traderjoes_ipad;
+			productName = traderjoes_ipad;
+			productReference = DEF840F9155184580022D9E4 /* traderjoes_ipad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEF840F0155184580022D9E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = DEF840F3155184580022D9E4 /* Build configuration list for PBXProject "traderjoes_ipad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DEF840EE155184580022D9E4;
+			productRefGroup = DEF840FA155184580022D9E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEF840F8155184580022D9E4 /* traderjoes_ipad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEF840F7155184580022D9E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF8410A155184580022D9E4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEF840F5155184580022D9E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF8410C155184580022D9E4 /* main.m in Sources */,
+				DEF84110155184580022D9E4 /* AppDelegate.m in Sources */,
+				DEF84113155184580022D9E4 /* traderjoes_ipad.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DEF84108155184580022D9E4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEF84109155184580022D9E4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEF84114155184580022D9E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		DEF84115155184580022D9E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEF84117155184580022D9E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "traderjoes_ipad/traderjoes_ipad-Prefix.pch";
+				INFOPLIST_FILE = "traderjoes_ipad/traderjoes_ipad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DEF84118155184580022D9E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "traderjoes_ipad/traderjoes_ipad-Prefix.pch";
+				INFOPLIST_FILE = "traderjoes_ipad/traderjoes_ipad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEF840F3155184580022D9E4 /* Build configuration list for PBXProject "traderjoes_ipad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF84114155184580022D9E4 /* Debug */,
+				DEF84115155184580022D9E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEF84116155184580022D9E4 /* Build configuration list for PBXNativeTarget "traderjoes_ipad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF84117155184580022D9E4 /* Debug */,
+				DEF84118155184580022D9E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DEF84111155184580022D9E4 /* traderjoes_ipad.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DEF84112155184580022D9E4 /* traderjoes_ipad.xcdatamodel */,
+			);
+			currentVersion = DEF84112155184580022D9E4 /* traderjoes_ipad.xcdatamodel */;
+			path = traderjoes_ipad.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DEF840F0155184580022D9E4 /* Project object */;
+}
