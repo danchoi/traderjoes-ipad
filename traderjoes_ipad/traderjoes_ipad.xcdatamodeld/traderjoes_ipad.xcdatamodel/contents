@@ -2,9 +2,10 @@
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11D50d" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Item" syncable="YES">
         <attribute name="itemID" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="timeStamp" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="title" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Item" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="Item" positionX="160" positionY="192" width="128" height="90"/>
     </elements>
 </model>
