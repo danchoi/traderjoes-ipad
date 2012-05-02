@@ -1,12 +1,5 @@
-//
-//  AppDelegate.h
-//  traderjoes_ipad
-//
-//  Created by Daniel Choi on 5/2/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
+#import "RKRequestExamples.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -19,4 +12,7 @@
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 
+@property (strong, nonatomic) UINavigationController *navigationController;
+@property (strong, nonatomic) UISplitViewController *splitViewController;
+@property (strong, nonatomic) RKRequestExamples *rkexamples;
 @end

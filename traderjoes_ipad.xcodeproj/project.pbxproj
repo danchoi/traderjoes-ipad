@@ -15,7 +15,62 @@
 		DEF8410C155184580022D9E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF8410B155184580022D9E4 /* main.m */; };
 		DEF84110155184580022D9E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF8410F155184580022D9E4 /* AppDelegate.m */; };
 		DEF84113155184580022D9E4 /* traderjoes_ipad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DEF84111155184580022D9E4 /* traderjoes_ipad.xcdatamodeld */; };
+		DEF8411F155185180022D9E4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF8411A155185180022D9E4 /* DetailViewController.m */; };
+		DEF84120155185180022D9E4 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF8411C155185180022D9E4 /* MasterViewController.m */; };
+		DEF84121155185180022D9E4 /* RKRequestExamples.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF8411E155185180022D9E4 /* RKRequestExamples.m */; };
+		DEF8413B1551869B0022D9E4 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF8412E155185DB0022D9E4 /* libRestKit.a */; };
+		DEF8413E155186AD0022D9E4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF8413D155186AD0022D9E4 /* CFNetwork.framework */; };
+		DEF84140155186B80022D9E4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF8413F155186B80022D9E4 /* MobileCoreServices.framework */; };
+		DEF84142155186BE0022D9E4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF84141155186BE0022D9E4 /* Security.framework */; };
+		DEF84144155186C40022D9E4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF84143155186C40022D9E4 /* SystemConfiguration.framework */; };
+		DEF84146155186CC0022D9E4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF84145155186CC0022D9E4 /* QuartzCore.framework */; };
+		DEF84148155186D30022D9E4 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF84147155186D30022D9E4 /* libxml2.dylib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEF8412D155185DB0022D9E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEF84122155185DA0022D9E4 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		DEF8412F155185DB0022D9E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEF84122155185DA0022D9E4 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		DEF84131155185DB0022D9E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEF84122155185DA0022D9E4 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		DEF84133155185DB0022D9E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEF84122155185DA0022D9E4 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+		DEF84135155185DB0022D9E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEF84122155185DA0022D9E4 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 259C301615128079003066A2;
+			remoteInfo = RestKitResources;
+		};
+		DEF841391551867B0022D9E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEF84122155185DA0022D9E4 /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DEF840F9155184580022D9E4 /* traderjoes_ipad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = traderjoes_ipad.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,13 +78,26 @@
 		DEF840FF155184580022D9E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DEF84101155184580022D9E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DEF84103155184580022D9E4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		DEF84107155184580022D9E4 /* traderjoes_ipad-Info.plist */ = {isa = PBXFileReference; path = "traderjoes_ipad-Info.plist"; sourceTree = "<group>"; };
+		DEF84107155184580022D9E4 /* traderjoes_ipad-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "traderjoes_ipad-Info.plist"; sourceTree = "<group>"; };
 		DEF84109155184580022D9E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DEF8410B155184580022D9E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DEF8410D155184580022D9E4 /* traderjoes_ipad-Prefix.pch */ = {isa = PBXFileReference; path = "traderjoes_ipad-Prefix.pch"; sourceTree = "<group>"; };
-		DEF8410E155184580022D9E4 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		DEF8410D155184580022D9E4 /* traderjoes_ipad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "traderjoes_ipad-Prefix.pch"; sourceTree = "<group>"; };
+		DEF8410E155184580022D9E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DEF8410F155184580022D9E4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DEF84112155184580022D9E4 /* traderjoes_ipad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = traderjoes_ipad.xcdatamodel; sourceTree = "<group>"; };
+		DEF84119155185180022D9E4 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		DEF8411A155185180022D9E4 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		DEF8411B155185180022D9E4 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		DEF8411C155185180022D9E4 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		DEF8411D155185180022D9E4 /* RKRequestExamples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKRequestExamples.h; sourceTree = "<group>"; };
+		DEF8411E155185180022D9E4 /* RKRequestExamples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKRequestExamples.m; sourceTree = "<group>"; };
+		DEF84122155185DA0022D9E4 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
+		DEF8413D155186AD0022D9E4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DEF8413F155186B80022D9E4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		DEF84141155186BE0022D9E4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DEF84143155186C40022D9E4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DEF84145155186CC0022D9E4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DEF84147155186D30022D9E4 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +105,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEF84148155186D30022D9E4 /* libxml2.dylib in Frameworks */,
+				DEF84146155186CC0022D9E4 /* QuartzCore.framework in Frameworks */,
+				DEF84144155186C40022D9E4 /* SystemConfiguration.framework in Frameworks */,
+				DEF84142155186BE0022D9E4 /* Security.framework in Frameworks */,
+				DEF84140155186B80022D9E4 /* MobileCoreServices.framework in Frameworks */,
+				DEF8413E155186AD0022D9E4 /* CFNetwork.framework in Frameworks */,
+				DEF8413B1551869B0022D9E4 /* libRestKit.a in Frameworks */,
 				DEF840FE155184580022D9E4 /* UIKit.framework in Frameworks */,
 				DEF84100155184580022D9E4 /* Foundation.framework in Frameworks */,
 				DEF84102155184580022D9E4 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +125,13 @@
 		DEF840EE155184580022D9E4 = {
 			isa = PBXGroup;
 			children = (
+				DEF84147155186D30022D9E4 /* libxml2.dylib */,
+				DEF84145155186CC0022D9E4 /* QuartzCore.framework */,
+				DEF84143155186C40022D9E4 /* SystemConfiguration.framework */,
+				DEF84141155186BE0022D9E4 /* Security.framework */,
+				DEF8413F155186B80022D9E4 /* MobileCoreServices.framework */,
+				DEF8413D155186AD0022D9E4 /* CFNetwork.framework */,
+				DEF84122155185DA0022D9E4 /* RestKit.xcodeproj */,
 				DEF84105155184580022D9E4 /* traderjoes_ipad */,
 				DEF840FC155184580022D9E4 /* Frameworks */,
 				DEF840FA155184580022D9E4 /* Products */,
@@ -78,6 +160,12 @@
 		DEF84105155184580022D9E4 /* traderjoes_ipad */ = {
 			isa = PBXGroup;
 			children = (
+				DEF84119155185180022D9E4 /* DetailViewController.h */,
+				DEF8411A155185180022D9E4 /* DetailViewController.m */,
+				DEF8411B155185180022D9E4 /* MasterViewController.h */,
+				DEF8411C155185180022D9E4 /* MasterViewController.m */,
+				DEF8411D155185180022D9E4 /* RKRequestExamples.h */,
+				DEF8411E155185180022D9E4 /* RKRequestExamples.m */,
 				DEF8410E155184580022D9E4 /* AppDelegate.h */,
 				DEF8410F155184580022D9E4 /* AppDelegate.m */,
 				DEF84111155184580022D9E4 /* traderjoes_ipad.xcdatamodeld */,
@@ -97,6 +185,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DEF84123155185DA0022D9E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEF8412E155185DB0022D9E4 /* libRestKit.a */,
+				DEF84130155185DB0022D9E4 /* RestKitTests.octest */,
+				DEF84132155185DB0022D9E4 /* RestKit.framework */,
+				DEF84134155185DB0022D9E4 /* RestKitFrameworkTests.octest */,
+				DEF84136155185DB0022D9E4 /* RestKitResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -111,6 +211,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DEF8413A1551867B0022D9E4 /* PBXTargetDependency */,
 			);
 			name = traderjoes_ipad;
 			productName = traderjoes_ipad;
@@ -135,12 +236,56 @@
 			mainGroup = DEF840EE155184580022D9E4;
 			productRefGroup = DEF840FA155184580022D9E4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DEF84123155185DA0022D9E4 /* Products */;
+					ProjectRef = DEF84122155185DA0022D9E4 /* RestKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DEF840F8155184580022D9E4 /* traderjoes_ipad */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DEF8412E155185DB0022D9E4 /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = DEF8412D155185DB0022D9E4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DEF84130155185DB0022D9E4 /* RestKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.octest;
+			remoteRef = DEF8412F155185DB0022D9E4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DEF84132155185DB0022D9E4 /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = DEF84131155185DB0022D9E4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DEF84134155185DB0022D9E4 /* RestKitFrameworkTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.octest;
+			remoteRef = DEF84133155185DB0022D9E4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DEF84136155185DB0022D9E4 /* RestKitResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitResources.bundle;
+			remoteRef = DEF84135155185DB0022D9E4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DEF840F7155184580022D9E4 /* Resources */ = {
@@ -161,10 +306,21 @@
 				DEF8410C155184580022D9E4 /* main.m in Sources */,
 				DEF84110155184580022D9E4 /* AppDelegate.m in Sources */,
 				DEF84113155184580022D9E4 /* traderjoes_ipad.xcdatamodeld in Sources */,
+				DEF8411F155185180022D9E4 /* DetailViewController.m in Sources */,
+				DEF84120155185180022D9E4 /* MasterViewController.m in Sources */,
+				DEF84121155185180022D9E4 /* RKRequestExamples.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEF8413A1551867B0022D9E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = DEF841391551867B0022D9E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DEF84108155184580022D9E4 /* InfoPlist.strings */ = {
@@ -230,7 +386,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "traderjoes_ipad/traderjoes_ipad-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
 				INFOPLIST_FILE = "traderjoes_ipad/traderjoes_ipad-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -241,7 +402,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "traderjoes_ipad/traderjoes_ipad-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
 				INFOPLIST_FILE = "traderjoes_ipad/traderjoes_ipad-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
