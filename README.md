@@ -19,7 +19,7 @@ Then start up the Sinatra service by running
 
     rackup -p 3010
 
-Then build and run the traderjoes_ipad project in XCode. 
+Then build and run traderjoes_ipad.xcodeproj in XCode. 
 
 
 

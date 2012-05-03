@@ -43,7 +43,10 @@
     NSLog(@"Load collection of Categories: %@", objects);
     self.categories = objects;
     [self.tableView reloadData];
-    NSLog(@"Reloading data");
+    NSIndexPath *i = [NSIndexPath indexPathForRow:0 inSection:0];
+    [self.tableView selectRowAtIndexPath:i animated:YES scrollPosition:UITableViewScrollPositionTop];
+    [self tableView:self.tableView didSelectRowAtIndexPath:i];
+
 }
 
 
@@ -108,7 +111,6 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  
   Item *item = [((Category*)[self.categories objectAtIndex: indexPath.section]).items objectAtIndex:indexPath.row];
   self.detailViewController.detailItem = item;
 } 
