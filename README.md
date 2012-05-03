@@ -12,7 +12,7 @@ interested in helping, climb aboard!
 
 ![wine](https://github.com/danchoi/traderjoes-ipad/raw/master/screenshots/wine-sm.png)
 
-![french-toast](https://github.com/danchoi/traderjoes-ipad/raw/master/screenshots/frenchtoast-sm.png)
+![chicken](https://github.com/danchoi/traderjoes-ipad/raw/master/screenshots/frenchtoast-sm.png)
 
 ## Setup
 
