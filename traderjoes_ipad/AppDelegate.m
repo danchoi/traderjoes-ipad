@@ -8,6 +8,12 @@
 #import "Category.h"
 #import "Item.h"
 
+@interface AppDelegate ()
+@property (strong, nonatomic) UINavigationController *menuNavigationController;
+@property (strong, nonatomic) ProductsViewController *products_vc;
+@property (strong, nonatomic) RecipesViewController *recipes_vc;
+@end 
+
 @implementation AppDelegate
 
 @synthesize window = _window;
@@ -16,6 +22,10 @@
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
 @synthesize navigationController = _navigationController;
 @synthesize splitViewController = _splitViewController;
+
+@synthesize menuNavigationController;
+@synthesize products_vc;
+@synthesize recipes_vc;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -49,26 +59,24 @@
 
   
 
-  ProductsViewController *products_vc = [[ProductsViewController alloc] init];
-  RecipesViewController *recipes_vc = [[RecipesViewController alloc] init];
-  UINavigationController *master_nc = [[UINavigationController alloc] initWithRootViewController:products_vc];
+  self.products_vc = [[ProductsViewController alloc] init];
+  self.recipes_vc = [[RecipesViewController alloc] init];
+  self.menuNavigationController = [[UINavigationController alloc] initWithRootViewController:self.products_vc];
 
-  // test 
-  NSLog(@"visible: %d", [master_nc.visibleViewController isEqual:products_vc]);
   
   DetailViewController *detail_vc = [[DetailViewController alloc] init];
   UINavigationController *detail_nc = [[UINavigationController alloc] initWithRootViewController:detail_vc];
 
   // set up graph of objects
-  products_vc.detailViewController = detail_vc;
-  recipes_vc.detailViewController = detail_vc;
+  self.products_vc.detailViewController = detail_vc;
+  self.recipes_vc.detailViewController = detail_vc;
   
   self.splitViewController = [[UISplitViewController alloc] init];
   self.splitViewController.delegate = detail_vc;
-  self.splitViewController.viewControllers = [NSArray arrayWithObjects:master_nc, detail_nc, nil];
+  self.splitViewController.viewControllers = [NSArray arrayWithObjects:self.menuNavigationController, detail_nc, nil];
   
   self.window.rootViewController = self.splitViewController;
-  products_vc.managedObjectContext = self.managedObjectContext;
+  self.products_vc.managedObjectContext = self.managedObjectContext;
 
   [self.window makeKeyAndVisible];
 
@@ -78,8 +86,14 @@
 }
 
 
-// can be called from anywhere to switch sections
-// TODO
+// effectively a global function that can be called from anywhere to switch the menu
+
+- (void *)switchMenu:(NSString*)menu {
+  NSLog(@"switchMenu: %@", menu);
+  // test 
+  //NSLog(@"visible: %d", [self.menuNavigationController.visibleViewController isEqual:self.products_vc]);
+}
+
 
 
 

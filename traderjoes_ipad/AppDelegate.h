@@ -16,5 +16,6 @@
 @property (strong, nonatomic) UINavigationController *navigationController;
 @property (strong, nonatomic) UISplitViewController *splitViewController;
 
+- (void *)switchMenu:(NSString*)menu;
 
 @end
