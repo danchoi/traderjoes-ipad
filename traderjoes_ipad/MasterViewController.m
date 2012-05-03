@@ -4,9 +4,10 @@
 
 #import <RestKit/RestKit.h>
 #import <RestKit/CoreData.h>
+#import "Category.h"
 
 @interface MasterViewController ()
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
+
 @end
 
 @implementation MasterViewController
@@ -14,6 +15,8 @@
 @synthesize detailViewController = _detailViewController;
 @synthesize fetchedResultsController = __fetchedResultsController;
 @synthesize managedObjectContext = __managedObjectContext;
+
+@synthesize categories;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,6 +35,7 @@
 {
   [super viewDidLoad];
 
+  self.categories = [NSArray array];
   // maybe move to init
   [[RKObjectManager sharedManager] loadObjectsAtResourcePath:@"/categories" delegate:self];
 
@@ -57,9 +61,11 @@
 
 
 
-
 - (void)objectLoader:(RKObjectLoader*)objectLoader didLoadObjects:(NSArray*)objects {
     NSLog(@"Load collection of Categories: %@", objects);
+    self.categories = objects;
+    [self.tableView reloadData];
+    NSLog(@"Reloading data");
 }
 
 
@@ -75,44 +81,24 @@
   }
 }
 
-- (void)insertNewObject:(id)sender
-{
-  NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
-  NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];
-  NSManagedObject *newManagedObject = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
-  
-  // If appropriate, configure the new managed object.
-  // Normally you should use accessor methods, but using KVC here avoids the need to add a custom class to the template.
-  [newManagedObject setValue:@"Item Example" forKey:@"title"];
-  [newManagedObject setValue:[NSDate date] forKey:@"timeStamp"];
-  
-  // Save the context.
-  NSError *error = nil;
-  if (![context save:&error]) {
-     // Replace this implementation with code to handle the error appropriately.
-     // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
-    NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-    abort();
-  }
-}
+
 
 #pragma mark - Table View
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-  return [[self.fetchedResultsController sections] count];
+  // return [self.categories count];
+  return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-  id <NSFetchedResultsSectionInfo> sectionInfo = [[self.fetchedResultsController sections] objectAtIndex:section];
-  return [sectionInfo numberOfObjects];
+  return [self.categories count];
 }
 
-// Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  static NSString *CellIdentifier = @"Cell";
+  static NSString *CellIdentifier = @"CategoryCell";
   
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
   if (cell == nil) {
@@ -121,8 +107,9 @@
       cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
   }
+  Category *category = [self.categories objectAtIndex: indexPath.row];
+  cell.textLabel.text = category.name;
 
-  [self configureCell:cell atIndexPath:indexPath];
   return cell;
 }
 
@@ -227,51 +214,5 @@
   }
 }
 
-- (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject
-    atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type
-   newIndexPath:(NSIndexPath *)newIndexPath
-{
-  UITableView *tableView = self.tableView;
-  
-  switch(type) {
-    case NSFetchedResultsChangeInsert:
-      [tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
-      break;
-      
-    case NSFetchedResultsChangeDelete:
-      [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-      break;
-      
-    case NSFetchedResultsChangeUpdate:
-      [self configureCell:[tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
-      break;
-      
-    case NSFetchedResultsChangeMove:
-      [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-      [tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath]withRowAnimation:UITableViewRowAnimationFade];
-      break;
-  }
-}
-
-- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
-{
-  [self.tableView endUpdates];
-}
-
-/*
-// Implementing the above methods to update the table view in response to individual changes may have performance implications if a large number of changes are made simultaneously. If this proves to be an issue, you can instead just implement controllerDidChangeContent: which notifies the delegate that all section and object changes have been processed. 
- 
- - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
-{
-  // In the simplest, most efficient, case, reload the table view.
-  [self.tableView reloadData];
-}
- */
-
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
-{
-  NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
-  cell.textLabel.text = [[object valueForKey:@"timeStamp"] description];
-}
 
 @end

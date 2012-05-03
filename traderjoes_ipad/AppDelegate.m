@@ -35,8 +35,6 @@
 
   [[RKObjectManager sharedManager].mappingProvider setMapping:categoryMapping forKeyPath:@"categories"];
 
-  //[client get:@"/categories" delegate:self];
-
 
   
 
