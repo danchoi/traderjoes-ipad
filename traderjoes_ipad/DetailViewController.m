@@ -64,7 +64,9 @@
 
 
   self.webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+  self.webView.scalesPageToFit = YES;
   self.webView.delegate = self;
+  self.webView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
   [self.view addSubview:self.webView];
   NSString *url = @"http://traderjoes.com/fearless-flyer";
   //[self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
