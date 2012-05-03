@@ -1,4 +1,4 @@
-# Trader Joes on the iPad
+# Trader Joe's on the iPad
 
 This is an open source iOS/Ruby project that puts Trader Joe's Fearless Flyer and
 Recipes on your iPad. It lets you navigate the content easily  using the iPad's
