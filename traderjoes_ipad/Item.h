@@ -1,9 +1,11 @@
 #import <Foundation/Foundation.h>
-#import <CoreData/CoreData.h>
 
-@interface Item : NSManagedObject
+@interface Item : NSObject
+@property (nonatomic, retain) NSString* name;
+@property (nonatomic, retain) NSString* url;
 @property (nonatomic, retain) NSNumber* itemID;
-@property (nonatomic, retain) NSString* title;
-@property (nonatomic, retain) NSDate* timeStamp;
+@property (nonatomic, retain) NSNumber* categoryID;
+
+
 
 @end

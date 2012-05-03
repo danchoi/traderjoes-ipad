@@ -5,6 +5,7 @@
 #import <RestKit/RestKit.h>
 #import <RestKit/CoreData.h>
 #import "Category.h"
+#import "Item.h"
 
 @implementation AppDelegate
 
@@ -29,9 +30,18 @@
 
   [RKObjectManager objectManagerWithBaseURLString:@"http://localhost:3010"];  
 
+  RKObjectMapping *itemMapping = [RKObjectMapping mappingForClass:[Item class]];
+  [itemMapping mapKeyPath:@"name" toAttribute:@"name"];
+  [itemMapping mapKeyPath:@"url" toAttribute:@"url"];
+  /*
+  [itemMapping mapKeyPath:@"item_id" toAttribute:@"itemID"];
+  [itemMapping mapKeyPath:@"category_id" toAttribute:@"categoryID"];
+  */
+
   RKObjectMapping *categoryMapping = [RKObjectMapping mappingForClass:[Category class]];
   [categoryMapping mapKeyPath:@"name" toAttribute:@"name"];
   [categoryMapping mapKeyPath:@"category_id" toAttribute:@"categoryID"];
+  [categoryMapping mapKeyPath:@"items" toRelationship:@"items" withMapping:itemMapping];
 
   [[RKObjectManager sharedManager].mappingProvider setMapping:categoryMapping forKeyPath:@"categories"];
 
