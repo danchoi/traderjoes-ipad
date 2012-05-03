@@ -1,4 +1,5 @@
 #import "DetailViewController.h"
+#import "Item.h"
 
 @interface DetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
@@ -32,7 +33,8 @@
   // Update the user interface for the detail item.
 
   if (self.detailItem) {
-    self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"timeStamp"] description];
+    NSLog(@"selected %@", self.detailItem);
+    self.detailDescriptionLabel.text = ((Item*)self.detailItem).name;
   }
 }
 

@@ -110,8 +110,8 @@
       cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
   }
-  Category *category = [((Category*)[self.categories objectAtIndex: indexPath.section]).items objectAtIndex:indexPath.row];
-  cell.textLabel.text = category.name;
+  Item *item = [((Category*)[self.categories objectAtIndex: indexPath.section]).items objectAtIndex:indexPath.row];
+  cell.textLabel.text = item.name;
 
   return cell;
 }
@@ -130,17 +130,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  return;
-  NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-  if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-	  if (!self.detailViewController) {
-	    self.detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController_iPhone" bundle:nil];
-	  }
-    self.detailViewController.detailItem = object;
-    [self.navigationController pushViewController:self.detailViewController animated:YES];
-  } else {
-    self.detailViewController.detailItem = object;
-  }
+  
+  Item *item = [((Category*)[self.categories objectAtIndex: indexPath.section]).items objectAtIndex:indexPath.row];
+  self.detailViewController.detailItem = item;
 }
 
   
