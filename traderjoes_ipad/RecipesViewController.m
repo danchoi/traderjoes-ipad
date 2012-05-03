@@ -36,7 +36,7 @@
 
   self.categories = [NSArray array];
   // maybe move to init
-  [[RKObjectManager sharedManager] loadObjectsAtResourcePath:@"/categories" delegate:self];
+  [[RKObjectManager sharedManager] loadObjectsAtResourcePath:@"/recipes" delegate:self];
 
   self.title = NSLocalizedString(@"Recipes", @"Recipes");
   self.clearsSelectionOnViewWillAppear = NO;

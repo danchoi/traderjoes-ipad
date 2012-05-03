@@ -37,12 +37,10 @@
 
   if (self.detailItem) {
     Item *i = (Item*)self.detailItem;
-    NSString *fullUrl = [NSString stringWithFormat:@"http://m.traderjoes.com/fearless-flyer/%@", i.url];
-    NSLog(@"selected %@ -> %@", i, fullUrl);
+    NSLog(@"selected %@ -> %@", i, i.url);
     //self.detailDescriptionLabel.text = i.name;
     self.title = i.name;
-    NSURL *nsurl = [NSURL URLWithString:fullUrl];
-    NSLog(@"nsurl: %@", nsurl);
+    NSURL *nsurl = [NSURL URLWithString:i.url];
     [self.webView loadRequest:[NSURLRequest requestWithURL:nsurl]];
   }
 }

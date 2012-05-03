@@ -21,7 +21,7 @@
 
   self.categories = [NSArray array];
   // maybe move to init
-  [[RKObjectManager sharedManager] loadObjectsAtResourcePath:@"/categories" delegate:self];
+  [[RKObjectManager sharedManager] loadObjectsAtResourcePath:@"/products" delegate:self];
 
   // Moved from initWithNibName
   self.title = @"Fearless Flyer";
@@ -111,10 +111,8 @@
   
   Item *item = [((Category*)[self.categories objectAtIndex: indexPath.section]).items objectAtIndex:indexPath.row];
   self.detailViewController.detailItem = item;
-}
-
+} 
   
-
 
 - (void)controller:(NSFetchedResultsController *)controller didChangeSection:(id <NSFetchedResultsSectionInfo>)sectionInfo
       atIndex:(NSUInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type
