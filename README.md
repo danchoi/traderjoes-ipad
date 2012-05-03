@@ -36,6 +36,12 @@ Then build and run traderjoes_ipad.xcodeproj in XCode.
 
 [Trader Joe's Fearless Flyer for the Kindle](http://kindlefeeder.com/traderjoes/index.html)
 
+## Author
+
+* Daniel Choi 
+* Email: dhchoi@gmail.com  
+* Twitter: [danchoi](http://twitter.com/danchoi)
+* Web: [http://danielchoi.com/software](http://danielchoi.com/software)
 
 ## MIT License
 
