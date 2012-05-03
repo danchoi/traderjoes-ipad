@@ -35,22 +35,27 @@
   // Update the user interface for the detail item.
 
   if (self.detailItem) {
-    NSLog(@"selected %@", self.detailItem);
-    self.detailDescriptionLabel.text = ((Item*)self.detailItem).name;
+    Item *i = (Item*)self.detailItem;
+    NSString *fullUrl = [NSString stringWithFormat:@"http://m.traderjoes.com/fearless-flyer/%@", i.url];
+    NSLog(@"selected %@ -> %@", i, fullUrl);
+    //self.detailDescriptionLabel.text = i.name;
+    self.title = i.name;
+    NSURL *nsurl = [NSURL URLWithString:fullUrl];
+    NSLog(@"nsurl: %@", nsurl);
+    [self.webView loadRequest:[NSURLRequest requestWithURL:nsurl]];
   }
 }
 
 - (void)viewDidLoad
 {
+  NSLog(@"view did load");
   [super viewDidLoad];
   self.webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
   self.webView.delegate = self;
   [self.view addSubview:self.webView];
-  NSString *url = @"http://instantwatcher.com";
-  [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
+  NSString *url = @"http://traderjoes.com/fearless-flyer";
+  //[self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
   NSLog(@"%@", self.webView);
-  self.title = NSLocalizedString(@"Detail", @"Detail");
-	// Do any additional setup after loading the view, typically from a nib.
   [self configureView];
 }
 
