@@ -1,8 +1,12 @@
 # Trader Joes on the iPad
 
-This is a quick open source project that puts Trader Joe's Fearless Flyer and
+This is a open source iOS project that puts Trader Joe's Fearless Flyer and
 Recipes on your iPad. It lets you navigate the content easily  using the iPad's
 native scrolling table views.
+
+This project is still under development. More features are planned! If you're
+interested in helping, climb aboard!
+
 
 ## Screenshots
 
@@ -27,5 +31,9 @@ Then start up the Sinatra service by running
 
 Then build and run traderjoes_ipad.xcodeproj in XCode. 
 
+
+## See Also
+
+[Trader Joe's Fearless Flyer for the Kindle](http://kindlefeeder.com/traderjoes/index.html)
 
 
