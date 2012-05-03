@@ -1,5 +1,6 @@
 #import <UIKit/UIKit.h>
-#import <RestKit/RestKit.h>
+
+@protocol RKRequestDelegate;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, RKRequestDelegate>
 
@@ -14,4 +15,6 @@
 
 @property (strong, nonatomic) UINavigationController *navigationController;
 @property (strong, nonatomic) UISplitViewController *splitViewController;
+
+
 @end

@@ -26,6 +26,7 @@
 		DEF84146155186CC0022D9E4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF84145155186CC0022D9E4 /* QuartzCore.framework */; };
 		DEF84148155186D30022D9E4 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF84147155186D30022D9E4 /* libxml2.dylib */; };
 		DEF8414B1551915E0022D9E4 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF8414A1551915E0022D9E4 /* Item.m */; };
+		DEF8415115520EFD0022D9E4 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF8415015520EFD0022D9E4 /* Category.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,8 @@
 		DEF84147155186D30022D9E4 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		DEF841491551915E0022D9E4 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
 		DEF8414A1551915E0022D9E4 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		DEF8414F15520EFD0022D9E4 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
+		DEF8415015520EFD0022D9E4 /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +166,8 @@
 		DEF84105155184580022D9E4 /* traderjoes_ipad */ = {
 			isa = PBXGroup;
 			children = (
+				DEF8414F15520EFD0022D9E4 /* Category.h */,
+				DEF8415015520EFD0022D9E4 /* Category.m */,
 				DEF841491551915E0022D9E4 /* Item.h */,
 				DEF8414A1551915E0022D9E4 /* Item.m */,
 				DEF84119155185180022D9E4 /* DetailViewController.h */,
@@ -315,6 +320,7 @@
 				DEF84120155185180022D9E4 /* MasterViewController.m in Sources */,
 				DEF84121155185180022D9E4 /* RKRequestExamples.m in Sources */,
 				DEF8414B1551915E0022D9E4 /* Item.m in Sources */,
+				DEF8415115520EFD0022D9E4 /* Category.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

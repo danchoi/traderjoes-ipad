@@ -2,6 +2,9 @@
 
 #import "DetailViewController.h"
 
+#import <RestKit/RestKit.h>
+#import <RestKit/CoreData.h>
+
 @interface MasterViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
@@ -29,6 +32,9 @@
 {
   [super viewDidLoad];
 
+  // maybe move to init
+  [[RKObjectManager sharedManager] loadObjectsAtResourcePath:@"/categories" delegate:self];
+
   // Moved from initWithNibName
   self.title = NSLocalizedString(@"Master", @"Master");
   if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
@@ -48,6 +54,17 @@
   [super viewDidUnload];
   // Release any retained subviews of the main view.
 }
+
+
+
+
+- (void)objectLoader:(RKObjectLoader*)objectLoader didLoadObjects:(NSArray*)objects {
+    NSLog(@"Load collection of Categories: %@", objects);
+}
+
+
+
+
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {

@@ -2,6 +2,10 @@
 #import "MasterViewController.h"
 #import "DetailViewController.h"
 
+#import <RestKit/RestKit.h>
+#import <RestKit/CoreData.h>
+#import "Category.h"
+
 @implementation AppDelegate
 
 @synthesize window = _window;
@@ -20,15 +24,18 @@
  
   // RESTKIT 
 
-  RKClient *client = [RKClient clientWithBaseURLString: @"http://localhost:3010"];
+  //RKClient *client = [RKClient clientWithBaseURLString: @"http://localhost:3010"];
   // NSLog(@"I am your RKClient singleton : %@", [RKClient sharedClient]);
 
-  [client get:@"/categories" delegate:self];
+  [RKObjectManager objectManagerWithBaseURLString:@"http://localhost:3010"];  
 
+  RKObjectMapping *categoryMapping = [RKObjectMapping mappingForClass:[Category class]];
+  [categoryMapping mapKeyPath:@"name" toAttribute:@"name"];
+  [categoryMapping mapKeyPath:@"category_id" toAttribute:@"categoryID"];
 
+  [[RKObjectManager sharedManager].mappingProvider setMapping:categoryMapping forKeyPath:@"categories"];
 
-
-
+  //[client get:@"/categories" delegate:self];
 
 
   
@@ -90,11 +97,12 @@
   if ([req isGET]){
     NSLog(@"retrieved response %@", [res bodyAsString]);
   }
-
 }
 
 
-
+- (void)objectLoader:(RKObjectLoader*)objectLoader didLoadObjects:(NSArray*)objects {
+    NSLog(@"Load collection of Categories: %@", objects);
+}
 
 
 

@@ -1,10 +1,11 @@
 #import <UIKit/UIKit.h>
 
 @class DetailViewController;
+@protocol RKRequestDelegate;
 
 #import <CoreData/CoreData.h>
 
-@interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+@interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate, RKRequestDelegate>
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
 
