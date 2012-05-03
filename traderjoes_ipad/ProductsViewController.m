@@ -6,11 +6,7 @@
 #import <RestKit/CoreData.h>
 #import "Category.h"
 
-@interface ProductsViewController ()
-
-@end
-
-@implementation ProductsViewController
+@implementation ProductsViewController 
 
 @synthesize detailViewController = _detailViewController;
 @synthesize fetchedResultsController = __fetchedResultsController;
@@ -18,18 +14,6 @@
 
 @synthesize categories;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-  self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-  if (self) {
-    self.title = NSLocalizedString(@"Master", @"Master");
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-      self.clearsSelectionOnViewWillAppear = NO;
-      self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
-    }
-  }
-  return self;
-}
 							
 - (void)viewDidLoad
 {
@@ -40,17 +24,11 @@
   [[RKObjectManager sharedManager] loadObjectsAtResourcePath:@"/categories" delegate:self];
 
   // Moved from initWithNibName
-  self.title = NSLocalizedString(@"Master", @"Master");
-  if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-    self.clearsSelectionOnViewWillAppear = NO;
-    self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
-  }
+  self.title = NSLocalizedString(@"Products", @"Products");
+  self.clearsSelectionOnViewWillAppear = NO;
+  self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
 
-	// Do any additional setup after loading the view, typically from a nib.
-  self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
-  UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-  self.navigationItem.rightBarButtonItem = addButton;
 }
 
 - (void)viewDidUnload

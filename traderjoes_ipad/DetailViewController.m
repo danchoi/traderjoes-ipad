@@ -11,6 +11,7 @@
 @synthesize detailItem = _detailItem;
 @synthesize detailDescriptionLabel = _detailDescriptionLabel;
 @synthesize masterPopoverController = _masterPopoverController;
+@synthesize segmentedControl;
 
 @synthesize webView;
 
@@ -48,8 +49,17 @@
 
 - (void)viewDidLoad
 {
-  NSLog(@"view did load");
+  
   [super viewDidLoad];
+
+  NSArray *segments = [[NSArray alloc] initWithObjects: @"Flyer", @"Recipes", nil];
+  self.segmentedControl = [[UISegmentedControl alloc] initWithItems:segments];
+  self.segmentedControl.frame = CGRectMake(0, 0, 180, 28);
+  UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:segmentedControl];
+  self.navigationItem.rightBarButtonItem = item;
+  self.segmentedControl.segmentedControlStyle = UISegmentedControlStyleBar;
+  self.segmentedControl.selectedSegmentIndex = 0;
+
   self.webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
   self.webView.delegate = self;
   [self.view addSubview:self.webView];

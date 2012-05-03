@@ -7,5 +7,6 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @property (strong, nonatomic) UIWebView *webView;
+@property (nonatomic, strong) UISegmentedControl *segmentedControl;
 
 @end
