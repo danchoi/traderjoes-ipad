@@ -49,21 +49,22 @@
 
   
 
-  ProductsViewController *master_vc = [[ProductsViewController alloc] init];
-  UINavigationController *master_nc = [[UINavigationController alloc] initWithRootViewController:master_vc];
+  ProductsViewController *products_vc = [[ProductsViewController alloc] init];
+  RecipesViewController *recipes_vc = [[RecipesViewController alloc] init];
+  UINavigationController *products_nc = [[UINavigationController alloc] initWithRootViewController:products_vc];
   
   DetailViewController *detail_vc = [[DetailViewController alloc] init];
   UINavigationController *detail_nc = [[UINavigationController alloc] initWithRootViewController:detail_vc];
 
   // set up graph of objects
-  master_vc.detailViewController = detail_vc;
+  products_vc.detailViewController = detail_vc;
   
   self.splitViewController = [[UISplitViewController alloc] init];
   self.splitViewController.delegate = detail_vc;
-  self.splitViewController.viewControllers = [NSArray arrayWithObjects:master_nc, detail_nc, nil];
+  self.splitViewController.viewControllers = [NSArray arrayWithObjects:products_nc, detail_nc, nil];
   
   self.window.rootViewController = self.splitViewController;
-  master_vc.managedObjectContext = self.managedObjectContext;
+  products_vc.managedObjectContext = self.managedObjectContext;
 
   [self.window makeKeyAndVisible];
   return YES;
