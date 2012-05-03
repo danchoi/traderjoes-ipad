@@ -7,6 +7,7 @@ native scrolling table views.
 ## Screenshots
 
 ![wine](https://github.com/danchoi/tj_ipad/raw/master/screenshots/wine-sm.png)
+
 ![french-toast](https://github.com/danchoi/tj_ipad/raw/master/screenshots/frenchtoast-sm.png)
 
 ## Setup
