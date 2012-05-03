@@ -9,7 +9,7 @@
 #import "Item.h"
 
 @interface AppDelegate ()
-@property (strong, nonatomic) UINavigationController *menuNavigationController;
+@property (strong, nonatomic) UINavigationController *menu_nc;
 @property (strong, nonatomic) ProductsViewController *products_vc;
 @property (strong, nonatomic) RecipesViewController *recipes_vc;
 @end 
@@ -23,7 +23,7 @@
 @synthesize navigationController = _navigationController;
 @synthesize splitViewController = _splitViewController;
 
-@synthesize menuNavigationController;
+@synthesize menu_nc;
 @synthesize products_vc;
 @synthesize recipes_vc;
 
@@ -61,7 +61,7 @@
 
   self.products_vc = [[ProductsViewController alloc] init];
   self.recipes_vc = [[RecipesViewController alloc] init];
-  self.menuNavigationController = [[UINavigationController alloc] initWithRootViewController:self.products_vc];
+  self.menu_nc = [[UINavigationController alloc] initWithRootViewController:self.products_vc];
 
   
   DetailViewController *detail_vc = [[DetailViewController alloc] init];
@@ -73,7 +73,7 @@
   
   self.splitViewController = [[UISplitViewController alloc] init];
   self.splitViewController.delegate = detail_vc;
-  self.splitViewController.viewControllers = [NSArray arrayWithObjects:self.menuNavigationController, detail_nc, nil];
+  self.splitViewController.viewControllers = [NSArray arrayWithObjects:self.menu_nc, detail_nc, nil];
   
   self.window.rootViewController = self.splitViewController;
   self.products_vc.managedObjectContext = self.managedObjectContext;
@@ -85,14 +85,15 @@
 
 }
 
+- (void)segmentChanged:(UISegmentedControl*)sender {
+  NSString *sel = [sender titleForSegmentAtIndex:[sender selectedSegmentIndex]];
+  if ([sel isEqualToString:@"Recipes"]) {
+    NSLog(@"recipes");
 
-// effectively a global function that can be called from anywhere to switch the menu
-
-- (void *)switchMenu:(NSString*)menu {
-  NSLog(@"switchMenu: %@", menu);
-  // test 
-  //NSLog(@"visible: %d", [self.menuNavigationController.visibleViewController isEqual:self.products_vc]);
-}
+  } else {
+    NSLog(@"products");
+  }
+};
 
 
 

@@ -17,5 +17,6 @@
 @property (strong, nonatomic) UISplitViewController *splitViewController;
 
 - (void *)switchMenu:(NSString*)menu;
+- (void)segmentChanged:(UISegmentedControl*)sender;
 
 @end
