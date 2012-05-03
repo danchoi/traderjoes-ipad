@@ -3,6 +3,7 @@
 
 @interface DetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
+- (void)segmentChanged:(UISegmentedControl*)sender;
 - (void)configureView;
 @end
 
@@ -54,11 +55,12 @@
 
   NSArray *segments = [[NSArray alloc] initWithObjects: @"Flyer", @"Recipes", nil];
   self.segmentedControl = [[UISegmentedControl alloc] initWithItems:segments];
-  self.segmentedControl.frame = CGRectMake(0, 0, 180, 28);
+  self.segmentedControl.frame = CGRectMake(0, 0, 140, 28);
   UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:segmentedControl];
   self.navigationItem.rightBarButtonItem = item;
   self.segmentedControl.segmentedControlStyle = UISegmentedControlStyleBar;
   self.segmentedControl.selectedSegmentIndex = 0;
+  [self.segmentedControl addTarget:self action:@selector(segmentChanged:) forControlEvents:UIControlEventValueChanged];
 
   self.webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
   self.webView.delegate = self;
@@ -68,6 +70,10 @@
   NSLog(@"%@", self.webView);
   [self configureView];
 }
+
+- (void)segmentChanged:(UISegmentedControl*)sender {
+  NSLog(@"seg changed %d", [sender selectedSegmentIndex]);
+};
 
 - (void)viewDidUnload
 {

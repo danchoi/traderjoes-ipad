@@ -24,7 +24,7 @@
   [[RKObjectManager sharedManager] loadObjectsAtResourcePath:@"/categories" delegate:self];
 
   // Moved from initWithNibName
-  self.title = NSLocalizedString(@"Products", @"Products");
+  self.title = @"Fearless Flyer";
   self.clearsSelectionOnViewWillAppear = NO;
   self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
 
