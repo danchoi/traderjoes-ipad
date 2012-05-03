@@ -4,8 +4,7 @@ This is an open source iOS/Ruby project that puts Trader Joe's Fearless Flyer an
 Recipes on your iPad. It lets you navigate the content easily  using the iPad's
 native scrolling table views.
 
-This project is still under development. More features are planned. If you're
-interested in helping, climb aboard.
+This project is still under development. More features are planned. 
 
 Planned features:
 
@@ -13,7 +12,8 @@ Planned features:
 * Shopping List
 * User Reviews
 
-
+I plan to release this iPad app for free in the App Store soon, but feel free
+to use this code as you see fit, consistent with the MIT open source license.
 
 ## Screenshots
 
