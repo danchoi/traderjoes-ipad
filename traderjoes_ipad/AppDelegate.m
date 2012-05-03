@@ -52,6 +52,9 @@
   ProductsViewController *products_vc = [[ProductsViewController alloc] init];
   RecipesViewController *recipes_vc = [[RecipesViewController alloc] init];
   UINavigationController *master_nc = [[UINavigationController alloc] initWithRootViewController:products_vc];
+
+  // test 
+  NSLog(@"visible: %d", [master_nc.visibleViewController isEqual:products_vc]);
   
   DetailViewController *detail_vc = [[DetailViewController alloc] init];
   UINavigationController *detail_nc = [[UINavigationController alloc] initWithRootViewController:detail_vc];
@@ -68,8 +71,17 @@
   products_vc.managedObjectContext = self.managedObjectContext;
 
   [self.window makeKeyAndVisible];
+
+
   return YES;
+
 }
+
+
+// can be called from anywhere to switch sections
+// TODO
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

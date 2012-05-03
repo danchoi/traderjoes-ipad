@@ -53,6 +53,7 @@
   
   [super viewDidLoad];
 
+  // segmented button
   NSArray *segments = [[NSArray alloc] initWithObjects: @"Flyer", @"Recipes", nil];
   self.segmentedControl = [[UISegmentedControl alloc] initWithItems:segments];
   self.segmentedControl.frame = CGRectMake(0, 0, 140, 28);
@@ -61,6 +62,7 @@
   self.segmentedControl.segmentedControlStyle = UISegmentedControlStyleBar;
   self.segmentedControl.selectedSegmentIndex = 0;
   [self.segmentedControl addTarget:self action:@selector(segmentChanged:) forControlEvents:UIControlEventValueChanged];
+
 
   self.webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
   self.webView.delegate = self;
@@ -72,6 +74,9 @@
 }
 
 - (void)segmentChanged:(UISegmentedControl*)sender {
+  NSLog(@"seg changed %d", [sender selectedSegmentIndex]);
+  // what is the top menu view controller ?
+  
   NSLog(@"seg changed %d", [sender selectedSegmentIndex]);
 };
 
