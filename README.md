@@ -10,9 +10,9 @@ interested in helping, climb aboard!
 
 ## Screenshots
 
-![wine](https://github.com/danchoi/tj_ipad/raw/master/screenshots/wine-sm.png)
+![wine](https://github.com/danchoi/traderjoes-ipad/raw/master/screenshots/wine-sm.png)
 
-![french-toast](https://github.com/danchoi/tj_ipad/raw/master/screenshots/frenchtoast-sm.png)
+![french-toast](https://github.com/danchoi/traderjoes-ipad/raw/master/screenshots/frenchtoast-sm.png)
 
 ## Setup
 
