@@ -1,7 +1,7 @@
 #import <UIKit/UIKit.h>
-#import "RKRequestExamples.h"
+#import <RestKit/RestKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, RKRequestDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
@@ -14,5 +14,4 @@
 
 @property (strong, nonatomic) UINavigationController *navigationController;
 @property (strong, nonatomic) UISplitViewController *splitViewController;
-@property (strong, nonatomic) RKRequestExamples *rkexamples;
 @end

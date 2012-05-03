@@ -5,5 +5,4 @@
 @dynamic title;
 @dynamic timeStamp;
 
-
 @end

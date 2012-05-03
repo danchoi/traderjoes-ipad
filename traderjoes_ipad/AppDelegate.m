@@ -1,7 +1,6 @@
 #import "AppDelegate.h"
 #import "MasterViewController.h"
 #import "DetailViewController.h"
-#import <RestKit/RestKit.h>
 
 @implementation AppDelegate
 
@@ -12,23 +11,27 @@
 @synthesize navigationController = _navigationController;
 @synthesize splitViewController = _splitViewController;
 
-@synthesize rkexamples;
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-  // Override point for customization after application launch.
-  //
-  // RESTKIT INSERTION
 
-  RKClient *client = [RKClient clientWithBaseURLString: @"http://localhost:9292"];
-  NSLog(@"I am your RKClient singleton : %@", [RKClient sharedClient]);
+  
+ 
+  // RESTKIT 
 
-  self.rkexamples = [[RKRequestExamples alloc] init];
-  [self.rkexamples sendRequests];
+  RKClient *client = [RKClient clientWithBaseURLString: @"http://localhost:3010"];
+  // NSLog(@"I am your RKClient singleton : %@", [RKClient sharedClient]);
 
-  /* Move RestKit functions into a self contained class, maybe a singleton */
+  [client get:@"/categories" delegate:self];
+
+
+
+
+
+
+
+  
 
   MasterViewController *master_vc = [[MasterViewController alloc] init];
   UINavigationController *master_nc = [[UINavigationController alloc] initWithRootViewController:master_vc];
@@ -77,6 +80,27 @@
   [self saveContext];
 }
 
+
+
+
+
+
+// RESTKIT
+- (void)request:(RKRequest*)req didLoadResponse:(RKResponse*)res {
+  if ([req isGET]){
+    NSLog(@"retrieved response %@", [res bodyAsString]);
+  }
+
+}
+
+
+
+
+
+
+
+
+// CORE DATA
 - (void)saveContext
 {
   NSError *error = nil;
