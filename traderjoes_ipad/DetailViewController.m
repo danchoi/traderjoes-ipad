@@ -12,6 +12,8 @@
 @synthesize detailDescriptionLabel = _detailDescriptionLabel;
 @synthesize masterPopoverController = _masterPopoverController;
 
+@synthesize webView;
+
 #pragma mark - Managing the detail item
 
 - (void)setDetailItem:(id)newDetailItem
@@ -41,6 +43,12 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
+  self.webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+  self.webView.delegate = self;
+  [self.view addSubview:self.webView];
+  NSString *url = @"http://instantwatcher.com";
+  [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
+  NSLog(@"%@", self.webView);
   self.title = NSLocalizedString(@"Detail", @"Detail");
 	// Do any additional setup after loading the view, typically from a nib.
   [self configureView];
@@ -51,6 +59,10 @@
   [super viewDidUnload];
   // Release any retained subviews of the main view.
   self.detailDescriptionLabel = nil;
+}
+
+- (void)webViewDidFinishLoad:(UIWebView*)wv {
+  NSLog(@"webv did finish load");
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
