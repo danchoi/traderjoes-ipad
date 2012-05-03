@@ -89,9 +89,11 @@
   NSString *sel = [sender titleForSegmentAtIndex:[sender selectedSegmentIndex]];
   if ([sel isEqualToString:@"Recipes"]) {
     NSLog(@"recipes");
+    self.menu_nc.viewControllers = [NSArray arrayWithObject:self.recipes_vc];
 
   } else {
     NSLog(@"products");
+    self.menu_nc.viewControllers = [NSArray arrayWithObject:self.products_vc];
   }
 };
 
