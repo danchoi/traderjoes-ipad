@@ -4,6 +4,11 @@ This is a quick open source project that puts Trader Joe's Fearless Flyer and
 Recipes on your iPad. It lets you navigate the content easily  using the iPad's
 native scrolling table views.
 
+## Screenshots
+
+![wine](https://github.com/danchoi/tj_ipad/raw/master/screenshots/wine-sm.png)
+![french-toast](https://github.com/danchoi/tj_ipad/raw/master/screenshots/frenchtoast-sm.png)
+
 ## Setup
 
 There is a Sinatra app under sinatra/ that serves as the RESTFUL API service
