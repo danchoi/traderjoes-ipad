@@ -1,0 +1,217 @@
+---
+- :name: Bakery
+  :items:
+  - :name: Artisan Made Baguettes
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=598
+  - :name: Lemon Turnovers
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=599
+  - :name: Shortcake Biscuits
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=600
+- :name: Beverages
+  :items:
+  - :name: Crimson Blossom Green Tea
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=516
+  - :name: Limited Edition Peaberry Coffee
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=518
+  - :name: Organic Mango Lemonade
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=519
+  - :name: Pomegranate Limeade
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=517
+  - :name: Shade Grown Ground Espresso
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=520
+  - :name: Unsweetened Kettle Brewed Tea
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=521
+- :name: Cheese
+  :items:
+  - :name: 1000 Day Gouda
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=522
+  - :name: Asiago w/ Rosemary & Olive Oil
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=523
+  - :name: ! 'Ciliegine Fresh Mozzarella '
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=524
+  - :name: Crumbled Feta
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=525
+  - :name: Domestic Brie
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=526
+  - :name: Fancy Mexican Cheese Blend
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=527
+  - :name: Whipped Cream Cheese
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=528
+- :name: Frozen
+  :items:
+  - :name: Four Turkey Burgers
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=529
+  - :name: House Whip
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=530
+  - :name: Kung Pao Chicken
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=531
+  - :name: Mini Chicken Tamalitos
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=532
+  - :name: Organic Mixed Berry Blend
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=533
+  - :name: Pappardelle Pasta w/ Chicken
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=534
+  - :name: Pasta w/ Salmon & Asparagus
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=535
+  - :name: Premium Wild Salmon Burgers
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=536
+  - :name: Tofu Edamame Nuggets
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=537
+  - :name: Tomato Pesto Flatbread
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=613
+  - :name: Turkey Corn Dogs
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=538
+- :name: Grocery
+  :items:
+  - :name: 21 Seasoning Salute
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=539
+  - :name: California Estate Olive Oil
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=540
+  - :name: Cannellini White Kidney Beans
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=541
+  - :name: Cereal Bars Apple & Fig
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=542
+  - :name: Cocoa Almond Spread
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=543
+  - :name: ! 'Extra Large Black Olives '
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=544
+  - :name: Gold Quality Balsamic Vinegar
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=545
+  - :name: Green Olive Tapenade
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=546
+  - :name: ! 'Island Soyaki Sauce '
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=547
+  - :name: Jasmine Rice
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=548
+  - :name: Joe's O's Cereal
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=549
+  - :name: Maple & Brown Sugar Oatmeal
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=550
+  - :name: Organic Mango Passion Granola
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=551
+  - :name: Organic Maple Sugar
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=552
+  - :name: Organic Tomato Basil Marinara
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=553
+  - :name: Organic Virgin Coconut Oil
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=554
+  - :name: Organic Whole Wheat Fusili
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=555
+  - :name: Pitted Kalamata Olives
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=556
+  - :name: Pomegranate & Blueberry Cereal
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=557
+  - :name: Rice Vinegar
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=558
+  - :name: Salsa Autentica
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=559
+  - :name: Spanish Extra Virgin Olive Oil
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=560
+  - :name: Speculoos Cookie Butter
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=561
+  - :name: Stuffed Queen Sevillano Olives
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=562
+- :name: Produce & Flowers
+  :items:
+  - :name: Blackberries
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=563
+  - :name: Eggplant
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=564
+  - :name: English Cucumbers - EC/MW/SE
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=565
+  - :name: Fresh Lemons
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=566
+  - :name: Organic English Hothouse Cucumbers - WC
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=567
+  - :name: Organic Romaine Hearts
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=568
+  - :name: Organic Tomatoes on the Vine
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=569
+  - :name: ! 'Sunbeam Sunflowers '
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=570
+  - :name: Tri-Color Bell Peppers
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=571
+- :name: Refrigerated Products
+  :items:
+  - :name: All Natural Chicken Drumsticks
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=572
+  - :name: All Natural Tri-Tip Asada
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=573
+  - :name: Avocado's Number Guacamole
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=574
+  - :name: Bacon Cheddar Ranch Dip
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=575
+  - :name: Caramelized Onion Dip
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=614
+  - :name: Cilantro Jalapeño Hummus
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=576
+  - :name: Coconut Milk
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=577
+  - :name: Jumbo Uncured Beef Franks
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=578
+  - :name: Organic Chicken Family Pack
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=579
+  - :name: Smoke House Pulled Pork
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=580
+  - :name: Sour Cream
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=581
+  - :name: Super Spinach Salad
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=582
+  - :name: Tuna Salad Wrap
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=583
+  - :name: Uncured Applewood Smoked Bacon
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=584
+- :name: Snacks 'n Sweets
+  :items:
+  - :name: Bite Size Everything Crackers
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=605
+  - :name: Dried Wild Blueberries
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=585
+  - :name: ! 'Handful of Almonds, Cashews & Cranberries '
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=586
+  - :name: Joe Joe's Cookies
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=587
+  - :name: ¡Mango! ¡Mango! Gummies
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=588
+  - :name: ! 'Milk Chocolate PB Pretzels '
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=589
+  - :name: Rainbow's End Trail Mix
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=590
+  - :name: Raw California Almonds
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=591
+  - :name: Sweet Potato Tortilla Chip Rounds
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=592
+  - :name: Toasted Coconut Cookie Thins
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=593
+  - :name: Wasabi Peas
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=594
+- :name: Supplements & Such
+  :items:
+  - :name: Lemon Kitchen Hand Soap
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=595
+  - :name: Shea Butter Hand Cream
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=596
+  - :name: Paper Napkins
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=597
+- :name: Wine 'n Beer
+  :items:
+  - :name: Acre Russian River Chardonnay
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=601
+  - :name: Josephsbrau Plznr
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=602
+  - :name: Révélation Wines
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=603
+  - :name: ! 'Simpler Times Lager & Pilsner '
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=606
+  - :name: St. Somewhere Barbera
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=607
+  - :name: St. Somewhere Malbec
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=608
+  - :name: St. Somewhere Petit Verdot
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=609
+  - :name: St. Somewhere Syrah
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=610
+  - :name: TJ's Reserve Wines Carignane & Tempranillo
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=611
+  - :name: TJ's Reserve Zinfandel
+    :url: http://m.traderjoes.com/fearless-flyer/article.asp?article_id=612
