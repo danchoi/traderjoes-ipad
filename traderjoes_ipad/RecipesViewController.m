@@ -1,4 +1,4 @@
-#import "MasterViewController.h"
+#import "RecipesViewController.h"
 
 #import "DetailViewController.h"
 
@@ -6,11 +6,11 @@
 #import <RestKit/CoreData.h>
 #import "Category.h"
 
-@interface MasterViewController ()
+@interface RecipesViewController ()
 
 @end
 
-@implementation MasterViewController
+@implementation RecipesViewController
 
 @synthesize detailViewController = _detailViewController;
 @synthesize fetchedResultsController = __fetchedResultsController;
@@ -22,7 +22,7 @@
 {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
   if (self) {
-    self.title = NSLocalizedString(@"Master", @"Master");
+    self.title = NSLocalizedString(@"Recipes", @"Recipes");
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
       self.clearsSelectionOnViewWillAppear = NO;
       self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
@@ -40,7 +40,7 @@
   [[RKObjectManager sharedManager] loadObjectsAtResourcePath:@"/categories" delegate:self];
 
   // Moved from initWithNibName
-  self.title = NSLocalizedString(@"Master", @"Master");
+  self.title = NSLocalizedString(@"Recipes", @"Recipes");
   if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
     self.clearsSelectionOnViewWillAppear = NO;
     self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);

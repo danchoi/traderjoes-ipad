@@ -5,7 +5,7 @@
 
 #import <CoreData/CoreData.h>
 
-@interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate, RKRequestDelegate>
+@interface ProductsViewController : UITableViewController <NSFetchedResultsControllerDelegate, RKRequestDelegate>
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
 

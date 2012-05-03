@@ -16,7 +16,7 @@
 		DEF84110155184580022D9E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF8410F155184580022D9E4 /* AppDelegate.m */; };
 		DEF84113155184580022D9E4 /* traderjoes_ipad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DEF84111155184580022D9E4 /* traderjoes_ipad.xcdatamodeld */; };
 		DEF8411F155185180022D9E4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF8411A155185180022D9E4 /* DetailViewController.m */; };
-		DEF84120155185180022D9E4 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF8411C155185180022D9E4 /* MasterViewController.m */; };
+		DEF84120155185180022D9E4 /* ProductsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF8411C155185180022D9E4 /* ProductsViewController.m */; };
 		DEF84121155185180022D9E4 /* RKRequestExamples.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF8411E155185180022D9E4 /* RKRequestExamples.m */; };
 		DEF8413B1551869B0022D9E4 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF8412E155185DB0022D9E4 /* libRestKit.a */; };
 		DEF8413E155186AD0022D9E4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF8413D155186AD0022D9E4 /* CFNetwork.framework */; };
@@ -27,6 +27,7 @@
 		DEF84148155186D30022D9E4 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF84147155186D30022D9E4 /* libxml2.dylib */; };
 		DEF8414B1551915E0022D9E4 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF8414A1551915E0022D9E4 /* Item.m */; };
 		DEF8415115520EFD0022D9E4 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF8415015520EFD0022D9E4 /* Category.m */; };
+		DEF841541552CCCD0022D9E4 /* RecipesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF841531552CCCD0022D9E4 /* RecipesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,8 +90,8 @@
 		DEF84112155184580022D9E4 /* traderjoes_ipad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = traderjoes_ipad.xcdatamodel; sourceTree = "<group>"; };
 		DEF84119155185180022D9E4 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		DEF8411A155185180022D9E4 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		DEF8411B155185180022D9E4 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		DEF8411C155185180022D9E4 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		DEF8411B155185180022D9E4 /* ProductsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsViewController.h; sourceTree = "<group>"; };
+		DEF8411C155185180022D9E4 /* ProductsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsViewController.m; sourceTree = "<group>"; };
 		DEF8411D155185180022D9E4 /* RKRequestExamples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKRequestExamples.h; sourceTree = "<group>"; };
 		DEF8411E155185180022D9E4 /* RKRequestExamples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKRequestExamples.m; sourceTree = "<group>"; };
 		DEF84122155185DA0022D9E4 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
@@ -104,6 +105,8 @@
 		DEF8414A1551915E0022D9E4 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		DEF8414F15520EFD0022D9E4 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
 		DEF8415015520EFD0022D9E4 /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
+		DEF841521552CCCD0022D9E4 /* RecipesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipesViewController.h; sourceTree = "<group>"; };
+		DEF841531552CCCD0022D9E4 /* RecipesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,14 +169,16 @@
 		DEF84105155184580022D9E4 /* traderjoes_ipad */ = {
 			isa = PBXGroup;
 			children = (
+				DEF841521552CCCD0022D9E4 /* RecipesViewController.h */,
+				DEF841531552CCCD0022D9E4 /* RecipesViewController.m */,
 				DEF8414F15520EFD0022D9E4 /* Category.h */,
 				DEF8415015520EFD0022D9E4 /* Category.m */,
 				DEF841491551915E0022D9E4 /* Item.h */,
 				DEF8414A1551915E0022D9E4 /* Item.m */,
 				DEF84119155185180022D9E4 /* DetailViewController.h */,
 				DEF8411A155185180022D9E4 /* DetailViewController.m */,
-				DEF8411B155185180022D9E4 /* MasterViewController.h */,
-				DEF8411C155185180022D9E4 /* MasterViewController.m */,
+				DEF8411B155185180022D9E4 /* ProductsViewController.h */,
+				DEF8411C155185180022D9E4 /* ProductsViewController.m */,
 				DEF8411D155185180022D9E4 /* RKRequestExamples.h */,
 				DEF8411E155185180022D9E4 /* RKRequestExamples.m */,
 				DEF8410E155184580022D9E4 /* AppDelegate.h */,
@@ -317,10 +322,11 @@
 				DEF84110155184580022D9E4 /* AppDelegate.m in Sources */,
 				DEF84113155184580022D9E4 /* traderjoes_ipad.xcdatamodeld in Sources */,
 				DEF8411F155185180022D9E4 /* DetailViewController.m in Sources */,
-				DEF84120155185180022D9E4 /* MasterViewController.m in Sources */,
+				DEF84120155185180022D9E4 /* ProductsViewController.m in Sources */,
 				DEF84121155185180022D9E4 /* RKRequestExamples.m in Sources */,
 				DEF8414B1551915E0022D9E4 /* Item.m in Sources */,
 				DEF8415115520EFD0022D9E4 /* Category.m in Sources */,
+				DEF841541552CCCD0022D9E4 /* RecipesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

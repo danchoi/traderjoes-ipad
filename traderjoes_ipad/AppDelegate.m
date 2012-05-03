@@ -1,5 +1,6 @@
 #import "AppDelegate.h"
-#import "MasterViewController.h"
+#import "ProductsViewController.h"
+#import "RecipesViewController.h"
 #import "DetailViewController.h"
 
 #import <RestKit/RestKit.h>
@@ -48,12 +49,13 @@
 
   
 
-  MasterViewController *master_vc = [[MasterViewController alloc] init];
+  ProductsViewController *master_vc = [[ProductsViewController alloc] init];
   UINavigationController *master_nc = [[UINavigationController alloc] initWithRootViewController:master_vc];
   
   DetailViewController *detail_vc = [[DetailViewController alloc] init];
   UINavigationController *detail_nc = [[UINavigationController alloc] initWithRootViewController:detail_vc];
 
+  // set up graph of objects
   master_vc.detailViewController = detail_vc;
   
   self.splitViewController = [[UISplitViewController alloc] init];
